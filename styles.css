@@ -19,6 +19,10 @@ footer {
     margin-top: 40px; 
 }
 
+.nav-btns {
+    background-color: chocolate;
+}
+
 nav ul {
     list-style: none;
     padding: 0;

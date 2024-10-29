@@ -57,7 +57,7 @@ main p {
     box-sizing: border-box;
 }      
 
-h2 {
+main h2 {
     background-color: rgba(0, 156, 247, 0.584)!important;
     margin: 10px; 
     border-radius: 20px;
@@ -67,7 +67,7 @@ h2 {
     box-sizing: border-box;
 }
 
-h3 {
+main h3 {
     background-color: rgba(0, 156, 247, 0.584)!important;
     margin: 10px;
     border-radius: 20px;

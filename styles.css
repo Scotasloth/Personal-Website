@@ -21,6 +21,19 @@ nav ul li {
     margin: 0 15px;
 }
 
+
+.spaced {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+br {
+    line-height: 1,5;
+}
+
+p {
+    margin: 20px 0; /* Adjust the value as needed */
+}       
+
 .dropdown {
     position: relative;
     display: inline;

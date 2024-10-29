@@ -21,6 +21,9 @@ footer {
 
 .nav-btns {
     background-color: chocolate;
+    border-radius: 20px;
+    padding: .1px;
+    width: fit-content;
 }
 
 nav ul {

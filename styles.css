@@ -15,13 +15,6 @@ header {
     align-items: center;
 }
 
-footer {
-    background-color: #333; 
-    padding: 20px; 
-    text-align: center; 
-    margin-top: 40px; 
-}
-
 .head-img {
     width: 200px;
     height: auto;
@@ -60,11 +53,11 @@ nav ul li a {
 }
 
 br {
-    line-height: 1,5;
+    line-height: 1.5;
 }
 
 main p {
-    background-color: rgba(0, 156, 247, 0.584) !important;
+    background-color: rgba(0, 156, 247, 0.584);
     margin: 10px;
     border-radius: 20px;
     max-width: 600px;
@@ -74,7 +67,7 @@ main p {
 }      
 
 main h2 {
-    background-color: rgba(0, 156, 247, 0.584)!important;
+    background-color: rgba(0, 156, 247, 0.584);
     margin: 10px; 
     border-radius: 20px;
     max-width: 600px;
@@ -84,7 +77,7 @@ main h2 {
 }
 
 main h3 {
-    background-color: rgba(0, 156, 247, 0.584)!important;
+    background-color: rgba(0, 156, 247, 0.584);
     margin: 10px;
     border-radius: 20px;
     max-width: 600px;

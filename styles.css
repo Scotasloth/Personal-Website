@@ -10,6 +10,9 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 footer {
@@ -20,15 +23,16 @@ footer {
 }
 
 .head-img {
-    width: 50px;
+    width: 200px;
     height: auto;
 }
 
-.nav-btns {
-    background-color: chocolate;
-    border-radius: 20px;
-    padding: .1px;
-    width: fit-content;
+.head-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 50%  ;
 }
 
 nav ul {
@@ -38,9 +42,13 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 1rem;
 }
 
+nav ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
 
 .spaced {
     margin-bottom: 10px; 

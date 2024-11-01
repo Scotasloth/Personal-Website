@@ -1,12 +1,13 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #0f0f0f, #1d2837);
     position: relative;
-    
 }
 
+/* Header Container */
 .header-container {
     display: flex;
     align-items: center; 
@@ -14,6 +15,7 @@ body {
     justify-content: space-between; 
 }
 
+/* Image in Header */
 .head-img {
     width: 200px;
     height: auto;
@@ -24,12 +26,13 @@ body {
     height: auto;
     display: block;
     margin-bottom: 1rem;
-    border-radius: 50%  ;
+    border-radius: 50%; /* Circular image */
 }
 
+/* Navigation Styles */
 nav {
     float: right; 
-    margin-top: -150px; 
+    margin-top: -150px; /* Adjusts vertical position */
 }
 
 nav ul {
@@ -47,59 +50,45 @@ nav ul li a {
     text-decoration: none; 
     color: #ece2e2; 
     font-weight: bold; 
-    line-height: 50px; 
+    line-height: 50px; /* Vertical alignment */
 }
 
 nav ul li a:hover {
-    color: #4CAF50; 
+    color: #4CAF50; /* Hover color */
 }
 
+/* Spacing Utility */
 .spaced {
     margin-bottom: 10px; 
 }
 
+/* Footer Styles */
 .footer-txt {
     padding: 10px;
     text-align: center;
 }
 
-br {
-    line-height: 1.5;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(76, 175, 80, 0.5);
 }
 
-main p {
-    background-color: rgba(0, 156, 247, 0.584);
-    margin: 10px;
-    border-radius: 20px;
-    max-width: 600px;
-    padding: 10px;
-    width: fit-content; 
-    box-sizing: border-box;
-    color: #ece2e2;
-}      
-
-main h2 {
-    background-color: rgba(0, 156, 247, 0.584);
-    margin: 10px; 
-    border-radius: 20px;
-    max-width: 600px;
-    padding: 10px;
-    width: fit-content;
-    box-sizing: border-box;
-    color: #ece2e2;
-}
-
+/* Paragraph and Headings Styles */
+main p,
+main h2,
 main h3 {
     background-color: rgba(0, 156, 247, 0.584);
     margin: 10px;
     border-radius: 20px;
     max-width: 600px;
+    padding: 10px;
     width: fit-content; 
     box-sizing: border-box;
-    padding: 10px;
     color: #ece2e2;
 }
 
+/* Dropdown Styles */
 .dropdown {
     position: relative;
     display: inline;
@@ -119,7 +108,7 @@ main h3 {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -131,49 +120,21 @@ main h3 {
 }
 
 .dropbtn:hover {
-    background-color: #45a049; 
+    background-color: #45a049; /* Hover effect for dropdown button */
 }
 
 .show {
-    display: block;
+    display: block; /* Display dropdown when activated */
 }
 
+/* Animation Keyframes */
 @keyframes rotate {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+    to {
         transform: rotate(360deg);
     }
-}
-
-@keyframes float {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    100% {
-        transform: translate(100px, 100px) rotate(360deg); 
-    }
-}
-
-.lines {
-    position: absolute; 
-    width: 100px; 
-    height: 4px; 
-    background: rgba(76, 175, 80, 0.5); 
-    z-index: -1; 
-    transition: left 0.1s ease, top 0.1s ease; 
-    animation: rotate 20s linear infinite; 
-}
-
-.lines::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #4CAF50 25%, transparent 25%, transparent 50%, #4CAF50 50%, #4CAF50 75%, transparent 75%, transparent);
-    background-size: 200% 100%;
-    animation: move 1s linear infinite;
 }
 
 @keyframes move {
@@ -185,8 +146,28 @@ main h3 {
     }
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(76, 175, 80, 0.5);
+/* Lines Styles */
+.lines {
+    position: absolute; 
+    width: 100px; 
+    height: 4px; 
+    background: rgba(76, 175, 80, 0.5); 
+    z-index: -1; /* Behind other content */
+    transition: left 0.1s ease, top 0.1s ease; 
+    animation: rotate 20s linear infinite; /* Slow rotation */
+}
+
+.lines::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50 25%, transparent 25%, transparent 50%, #4CAF50 50%, #4CAF50 75%, transparent 75%, transparent);
+    background-size: 200% 100%;
+    animation: move 1s linear infinite; /* Background animation */
+}
+
+/* Line Break Styles */
+br {
+    line-height: 1.5;
 }

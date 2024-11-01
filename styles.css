@@ -140,10 +140,10 @@ main h3 {
 
 .lines {
     position: absolute; /* Allows random positioning */
-    width: 100px; /* Set a width for visibility */
-    height: 4px; /* Set a height */
-    background: transparent;
-    overflow: hidden;
+    width: 100px; /* Width of the line */
+    height: 4px; /* Height of the line */
+    background: rgba(76, 175, 80, 0.5); /* Visible background color */
+    transition: left 1s, top 1s; /* Smooth transition for movement */
 }
 
 .lines::before {

@@ -28,8 +28,8 @@ body {
 }
 
 nav {
-    float: right; /* Position nav on the right */
-    margin-top: -150px; /* Adjust this value to move links up */
+    float: right; 
+    margin-top: -150px; 
 }
 
 nav ul {
@@ -131,19 +131,39 @@ main h3 {
 }
 
 .dropbtn:hover {
-    background-color: #45a049; /* Slightly darker green */
+    background-color: #45a049; 
 }
 
 .show {
     display: block;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate(100px, 100px) rotate(360deg); 
+    }
+}
+
 .lines {
-    position: absolute; /* Allows random positioning */
-    width: 100px; /* Width of the line */
-    height: 4px; /* Height of the line */
-    background: rgba(76, 175, 80, 0.5); /* Visible background color */
-    transition: left 1s, top 1s; /* Smooth transition for movement */
+    position: absolute; 
+    width: 100px; 
+    height: 4px; 
+    background: rgba(76, 175, 80, 0.5); 
+    z-index: -1; 
+    transition: left 0.1s ease, top 0.1s ease; 
+    animation: rotate 20s linear infinite; 
 }
 
 .lines::before {
@@ -168,5 +188,5 @@ main h3 {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #f1f1f1;
+    background-color: rgba(76, 175, 80, 0.5);
 }

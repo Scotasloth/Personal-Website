@@ -1,67 +1,26 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ross McClymont</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="{% static 'js/scripts.js' %}" defer></script>
-</head>
-<body>
-    <div class="header-container">
-        <div class="head-img">
-            <img src="{% static 'images/ross.jpg' %}" alt="Ross McClymont">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'Home' %}">Home</a></li>
-                <li><a href="{% url 'projects' %}">Projects</a></li>
-                <li><a href="{% url 'about' %}">About Me</a></li>
-                <li><a href="{% url 'other' %}">Non-Code Projects</a></li>
-                <li><a href="{% url 'devlog' %}">Farisir Devlog</a></li>
-            </ul>
-        </nav>
-        <div class="dropdown">
-            <button class="dropbtn">Projects</button>
-            <div class="dropdown-content" id="dropdown-content">
-                <a href="https://github.com/Scotasloth/Vaxir-Tong-Translator">Vaxir Tong Translator</a>
-                <a href="https://github.com/Scotasloth/PCAP-Analyzer-Improved">PCAP Analyzer</a>
-                <a href="https://github.com/Scotasloth/Image-Thief">Image Thief</a>
-            </div>
-        </div>
-    </div>
-    <main>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <h2>My Projects</h2>
-        <p>Test blah blah blah</p>
+{% extends 'layout.html' %}
 
-        <h2>Vaxir Tong Translator</h2>
-        <h3>Python</h3>
-        <p>A translator written in Python that can translate between English and a fictional language called Vaxir Tong. This is done by using an SQL database 
-            to store all words and their translations. The code uses SQL to read from, update, delete and add words to and from the database.</p>
+{% block title %}
+{% endblock %}
 
-        <h2>PCAP Analyzer</h2>
-        <h3>Python</h3>
-        <p>An improved version of a PCAP reader program I worked on during my studies. Written in Python, it takes in a PCAP file from Wireshark
-            and processes the data in mulltiple ways including:<br class="spaced">
-            A list of all IP addresses and how many times the communicated.<br class="spaced">
-            Geolcation of the IP addresses.<br class="spaced">
-            visualizes the network.<br class="spaced"></p>
+{% block content %}
+    <h2>My Projects</h2>
+    <p>Test blah blah blah</p>
 
-        <h2>Image Thief</h2>
-        <h3>JavaScript</h3>
-        <p>A simple web scraper written in JavaScript that scrapes images from websites. Scrapped images are then all displayed on a local server for viewing</p>
-    </main>
+    <h2>Vaxir Tong Translator</h2>
+    <h3>Python</h3>
+    <p>A translator written in Python that can translate between English and a fictional language called Vaxir Tong. This is done by using an SQL database 
+    to store all words and their translations. The code uses SQL to read from, update, delete and add words to and from the database.</p>
 
-    <footer>
-        <div class="footer-txt"></div>
-            <p>&copy; 2024 Ross McClymont</p>
-        </div>
-    </footer>
-</body>
-</html>
+    <h2>PCAP Analyzer</h2>
+    <h3>Python</h3>
+    <p>An improved version of a PCAP reader program I worked on during my studies. Written in Python, it takes in a PCAP file from Wireshark
+    and processes the data in mulltiple ways including:<br class="spaced">
+    A list of all IP addresses and how many times the communicated.<br class="spaced">
+    Geolcation of the IP addresses.<br class="spaced">
+    visualizes the network.<br class="spaced"></p>
+
+    <h2>Image Thief</h2>
+    <h3>JavaScript</h3>
+    <p>A simple web scraper written in JavaScript that scrapes images from websites. Scrapped images are then all displayed on a local server for viewing</p>
+{% endblock %} 

@@ -1,50 +1,6 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ross McClymont</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="{% static 'js/scripts.js' %}" defer></script>
-</head>
-<body>
-    <div class="header-container">
-        <div class="head-img">
-            <img src="{% static 'images/ross.jpg' %}" alt="Ross McClymont">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'Home' %}">Home</a></li>
-                <li><a href="{% url 'projects' %}">Projects</a></li>
-                <li><a href="{% url 'about' %}">About Me</a></li>
-                <li><a href="{% url 'other' %}">Non-Code Projects</a></li>
-                <li><a href="{% url 'devlog' %}">Farisir Devlog</a></li>
-            </ul>
-        </nav>
-    </div>
-    <main>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <h2>About Me</h2>
-        <p></p>
+{% extends 'layout.html' %}
 
-        <h2>Skills</h2>
-        <p></p>
+{% block title %}
+{% endblock %}
 
-        <h3>Socials</h3>
-        <a href="https://github.com/Scotasloth">Github</a>
-        <p>Where all my personal code projects are stored</p>
-        <a href="https://www.linkedin.com/in/ross-mcclymont-910277234/">Linkedin</a>
-        
-    </main>
-    <footer>
-        <div class="footer-txt"></div>
-            <p>&copy; 2024 Ross McClymont</p>
-        </div>
-    </footer>
-</body>
-</html>
+{% block content %}

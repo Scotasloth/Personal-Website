@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ross McClymont</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="{% static 'js/scripts.js' %}" defer></script>
-</head>
-<body>
-    <div class="header-container">
-        <div class="head-img">
-            <img src="{% static 'images/ross.jpg' %}" alt="Ross McClymont">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'Home' %}">Home</a></li>
-                <li><a href="{% url 'projects' %}">Projects</a></li>
-                <li><a href="{% url 'about' %}">About Me</a></li>
-                <li><a href="{% url 'other' %}">Non-Code Projects</a></li>
-                <li><a href="{% url 'devlog' %}">Farisir Devlog</a></li>
-            </ul>
-        </nav>
-    </div>
-    <main>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-    </main>
-    <footer>
-        <div class="footer-txt"></div>
-            <p>&copy; 2024 Ross McClymont</p>
-        </div>
-    </footer>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}

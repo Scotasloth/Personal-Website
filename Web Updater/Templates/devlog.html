@@ -11,15 +11,15 @@
 <body>
     <div class="header-container">
         <div class="head-img">
-            <img src="ross.jpg" alt="Ross McClymont">
+            <img src="{% static 'images/ross.jpg' %}" alt="Ross McClymont">
         </div>
         <nav>
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="other.html">Non-Code Projects</a></li>
-                <li><a href="devlog.html">Farisir Devlog</a></li>
+                <li><a href="{% url 'Home' %}">Home</a></li>
+                <li><a href="{% url 'projects' %}">Projects</a></li>
+                <li><a href="{% url 'about' %}">About Me</a></li>
+                <li><a href="{% url 'requests' %}">Non-Code Projects</a></li>
+                <li><a href="{% url 'devlog' %}">Farisir Devlog</a></li>
             </ul>
         </nav>
     </div>

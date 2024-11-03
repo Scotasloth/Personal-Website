@@ -20,11 +20,11 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.homepage),
-    path('home/', views.homepage),
-    path('about/', views.about),
-    path('projects/', views.projects),
-    path('requests/', views.code_request),
-    path('devlog/', views.devlog),
-    path('other/', views.other),
+    path('', views.homepage, name='Home'),  # Home page
+    path('Home/', views.homepage, name="Home"),
+    path('about/', views.about, name='about'),  # About page
+    path('projects/', views.projects, name='projects'),  # Projects page
+    path('requests/', views.code_request, name='requests'),  # Requests page
+    path('devlog/', views.devlog, name='devlog'),  # Devlog page
+    path('other/', views.other, name='other'),  # Other page
 ]

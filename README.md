@@ -19,3 +19,4 @@ Welcome to my website project! This project showcases my personal portfolio, inc
 - **HTML**: For structuring the content of the website.
 - **CSS**: For styling the website, including animations and responsive design.
 - **JavaScript**: For adding interactivity, such as the dropdown menu and animated elements.
+- **Django**: The web framework used to build the backend of the website, enabling dynamic content and user management.

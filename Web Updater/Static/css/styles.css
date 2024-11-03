@@ -32,8 +32,9 @@ body {
 /* Navigation Styles */
 nav {
     float: right; 
-    margin-top: -150px; /* Adjusts vertical position */
+    margin-top: -50px; /* Adjusts vertical position */
     visibility: visible;
+    position: relative;
 }
 
 nav ul {

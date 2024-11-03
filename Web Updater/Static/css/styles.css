@@ -80,9 +80,7 @@ footer {
 main p,
 main h2,
 main h3 {
-    background-color: rgba(0, 156, 247, 0.584);
     margin: 10px;
-    border-radius: 20px;
     max-width: 600px;
     padding: 10px;
     width: fit-content; 
